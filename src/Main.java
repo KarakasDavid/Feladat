@@ -18,6 +18,6 @@ public class Main {
         System.out.println("Ez volt a bemenet: "+b);
         Basket basket = new Basket(b);
         System.out.println("A kosár összege: "+ basket.SumValue(shop1));
-        
+
     }
 }
