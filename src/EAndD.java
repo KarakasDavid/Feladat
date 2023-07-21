@@ -1,6 +1,6 @@
 public class EAndD extends Offer {
     private double percentage = 0.3;
-    
+
     @Override
     public int modifier(Basket basket, Shop shop){
         // ------- Megszámolta az E és D előfordulását --------
