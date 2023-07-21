@@ -1,6 +1,7 @@
 public class ShopItem {
-    private String name;
-    private int value;
+
+    private String name;    // Tárgy neve pl.: A
+    private int value;      // Tárgy ára
 
     public  ShopItem(String name, int value){
         this.name = name;
