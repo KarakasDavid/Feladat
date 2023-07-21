@@ -19,7 +19,6 @@ public class Basket {
         for(int i=0; i< itemList.length; i++){
             for (int j=0; j< shop.getItems().size() ;j++){
                 if(itemList[i].equals(shop.getItems().get(j).getName())){
-                    //System.out.println(itemList[i]+" - "+shop.getItems().get(j).toString());
                     summ += shop.getItems().get(j).getValue();
                 }
             }
