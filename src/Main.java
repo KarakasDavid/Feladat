@@ -18,7 +18,8 @@ public class Main {
         System.out.println("Adja meg a megvásárolni kívánt termékek listáját a következő formában: A A B C E");
         String b = shopperScanner.nextLine();
         System.out.println("Ez volt a bemenet: "+b);
-        Basket basket = new Basket(b);
+        String[] items = b.split(" ");
+        Basket basket = new Basket(items);
 
         int originalPrice = basket.SumValue(shop1);
         int discountPrice = basket.calculateDiscountedValue(shop1);

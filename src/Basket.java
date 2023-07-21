@@ -1,11 +1,11 @@
 public class Basket {
-    private String items;   //A kosár tartalma pl.: A A B C
+    private String[] items;   //A kosár tartalma pl.: A A B C
     int summ;               //A kosárban szereplő tárgyak összértéke
 
-    public Basket(String items){
+    public Basket(String[] items){
         this.items=items;
     }
-    public String getItems() {
+    public String[] getItems() {
         return items;
     }
     public void setSumm(int summ) {
@@ -14,11 +14,9 @@ public class Basket {
 
     //A megadott kosár bemenet alapján kiszámolja annak az összegét
     public int SumValue(Shop shop){
-
-        String[] itemList =items.split(" ");
-        for(int i=0; i< itemList.length; i++){
+        for(int i=0; i< items.length; i++){
             for (int j=0; j< shop.getItems().size() ;j++){
-                if(itemList[i].equals(shop.getItems().get(j).getName())){
+                if(items[i].equals(shop.getItems().get(j).getName())){
                     summ += shop.getItems().get(j).getValue();
                 }
             }
@@ -46,10 +44,9 @@ public class Basket {
 
     // Megszámolja, hogy egy termék hányszor szerepel a kosárban
     public int countItem(String name){
-        String[] itemList =items.split(" ");
         int count = 0;
-        for(int i=0; i<itemList.length; i++){
-            if(itemList[i].equals(name))
+        for(int i=0; i<items.length; i++){
+            if(items[i].equals(name))
                 count++;
         }
         return  count;
