@@ -2,8 +2,8 @@ public class EAndD extends Offer {
     @Override
     public int modifier(Basket basket, Shop shop){
         // ------- Megszámolta az E és D előfordulását --------
-        int eCount = countItem(basket,"E");
-        int dCount = countItem(basket,"D");
+        int eCount = basket.countItem("E");
+        int dCount = basket.countItem("D");
 
         if(eCount > 0 && dCount > 0)
             return 1;

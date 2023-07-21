@@ -1,4 +1,4 @@
-public class PayTowDGetOneFree extends Offer{
+public class PayTwoDGetOneFree extends Offer{
     private int dPrice;
 
     @Override
@@ -7,7 +7,7 @@ public class PayTowDGetOneFree extends Offer{
             if (shop.getItems().get(i).getName().equals("D"))
                 dPrice = shop.getItems().get(i).getValue();
         }
-        int dCount = countItem(basket,"D");
+        int dCount = basket.countItem("D");
 
         if(dCount <= 2 ){                           // Nincs leárazás
             return 0;

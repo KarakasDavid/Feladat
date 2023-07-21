@@ -44,4 +44,15 @@ public class Basket {
         }
         return summ;
     }
+
+    // Megszámolja, hogy egy termék hányszor szerepel a kosárban
+    public int countItem(String name){
+        String[] itemList =items.split(" ");
+        int count = 0;
+        for(int i=0; i<itemList.length; i++){
+            if(itemList[i].equals(name))
+                count++;
+        }
+        return  count;
+    }
 }

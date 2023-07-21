@@ -31,7 +31,7 @@ public class Shop {
         items.add(item5);
 
         Offer offer1 = new TwoAOneCHalf();
-        Offer offer2 = new PayTowDGetOneFree();
+        Offer offer2 = new PayTwoDGetOneFree();
         Offer offer3 = new EAndD();
         flexibleoffers.add(offer1);
         flexibleoffers.add(offer2);

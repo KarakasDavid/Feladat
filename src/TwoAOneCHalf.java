@@ -10,8 +10,8 @@ public class TwoAOneCHalf extends Offer{
 
 
         // ------- Megszámolta az A és C előfordulását --------
-        int aCount = countItem(basket,"A");
-        int cCount = countItem(basket,"C");
+        int aCount = basket.countItem("A");
+        int cCount = basket.countItem("C");
         int szam = aCount / 2;
 
         // ------- Amennyiben páros A van -------
